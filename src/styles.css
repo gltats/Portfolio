@@ -177,9 +177,15 @@ img.palace{
   .container2 {
     display: inline;
     position: relative;
-    width: 50%;
-    
+    width: 50%; 
   }
+
+  .container3 {
+    display: inline;
+    position: relative;
+    width: 50%; 
+  }
+  
   
   .app-img {
     width: 30%;
@@ -189,6 +195,28 @@ img.palace{
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
+  }
+
+  .graphic-img{
+    width: 40%;
+    margin: 3%;
+    border-radius: 5%;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .graphic-characters-img{
+    width: 20%;
+    margin-bottom: 5%;
+  }
+
+  .signature-img{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 3%;
+    width: 30%;
   }
   
   .middle {
@@ -210,6 +238,14 @@ img.palace{
     opacity: 1;
   }
   
+  .container3:hover .app-img {
+    opacity: 0.5;
+  }
+  
+  .container3:hover .middle {
+    opacity: 2;
+  }
+
   .text2 {
     background-color: rgba(1, 0, 5, 0.397);
     border-radius: 20%;
@@ -218,6 +254,21 @@ img.palace{
     padding: 16px 32px;
   }
 
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #ba34db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-bottom: 3%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
   /* Footer */
   footer {
@@ -310,6 +361,11 @@ img.palace{
     nav ul {
       font-size: 14px;
     }
+    
+    #buttons-work{
+      font-size: 14px;
+      margin: 1%;
+    }
   
     .content {
       text-align: center;
@@ -333,6 +389,9 @@ img.palace{
      
     }
     
+    footer .email-link:hover {
+      background: none;
+    }
 
   }
   
